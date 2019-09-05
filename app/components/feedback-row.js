@@ -9,6 +9,6 @@ export default Component.extend({
     this._super(...arguments);
     setTimeout(() => {
       this.set('loaded', true);
-    }, 300 * this.feedback.id)
+    }, 300 * this.feedback.rank)
   },
 });
