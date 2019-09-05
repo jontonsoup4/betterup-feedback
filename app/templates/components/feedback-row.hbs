@@ -1,0 +1,29 @@
+<div class="layout-row flex feedback-header">
+  <div class="flex rank-container">
+    <span class="rank">{{feedback.id}}</span>
+  </div>
+  <div class="layout-column flex">
+    <h3>{{feedback.title}}</h3>
+    <h5>{{feedback.attribute}}</h5>
+  </div>
+</div>
+<hr>
+<div class="layout-gt-sm-row flex feedback-body">
+  <div class="layout-column flex">
+    <div class="layout-column flex rating-block">
+      <div class="rating">{{feedback.coworkerRating}}</div>
+      <div class="description">Co-worker Rating</div>
+    </div>
+    <hr>
+    <div class="layout-column flex rating-block">
+      <div class="rating">{{format-difference feedback.difference}}</div>
+      <div class="description">Difference</div>
+    </div>
+  </div>
+  <p class="flex">
+    {{feedback.description}}
+  </p>
+  <div class="flex">
+    <Feedback-Chart @data={{feedback}} />
+  </div>
+</div>

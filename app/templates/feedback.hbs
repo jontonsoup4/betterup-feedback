@@ -1,0 +1,10 @@
+<div id="feedback">
+  <h2>Your Underconfident Skills</h2>
+  <p class="subtitle">
+    You rated yourself significantly lower than your co-workers on these skills.
+    Do you agree with these results? Consider why you may underestimate your ability in the following areas.
+  </p>
+  {{#each this.model as |feedback|}}
+    <Feedback-Row @feedback={{feedback}}></Feedback-Row>
+  {{/each}}
+</div>

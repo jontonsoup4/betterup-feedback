@@ -1,0 +1,18 @@
+$primary: "blue";
+$accent: "purple";
+$warn: "red";
+
+@import 'ember-paper';
+
+$border: map_get($color-grey, "200");
+$betterup-blue: #7fafdb;
+$betterup-yellow: #e9d158;
+$betterup-purple: #8a79b3;
+$betterup-gray: #aaaaaa;
+$betterup-dark-gray: #696969;
+
+$text-primary: map_get($color-grey, "800");
+$white: #fff;
+
+$font-family: 'Open Sans', sans-serif;
+

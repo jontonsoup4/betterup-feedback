@@ -1,0 +1,59 @@
+.feedback-chart {
+  .bar {
+    align-items: center;
+    flex: 2 1 auto;
+    margin: 0 8px;
+    transition: transform 200ms ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .label {
+    flex: 0 0 110px;
+    text-align: right;
+  }
+
+  .row {
+    margin: 4px 0;
+  }
+
+  .segment {
+    background-color: $border;
+    margin-right: 3px;
+    overflow: hidden;
+    width: 100%;
+
+    &:first-child {
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+    &-color {
+      height: 8px;
+      transition: width 400ms ease;
+      width: 0;
+
+      &.score-self {
+        background-color: $betterup-blue;
+      }
+
+      &.score-manager {
+        background-color: $betterup-yellow;
+      }
+
+      &.score-direct-reports {
+        background-color: $betterup-purple;
+      }
+
+      &.score-other {
+        background-color: $betterup-gray;
+      }
+    }
+  }
+}

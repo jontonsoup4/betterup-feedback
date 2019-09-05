@@ -1,0 +1,15 @@
+<div class="layout-column flex">
+  {{#each this.bars as |bar|}}
+    <div class="layout-row flex row">
+      <div class="flex label">{{bar.label}}</div>
+      <div class="layout-row flex bar">
+        {{#each bar.segments as |segmentWidth|}}
+          <div class="segment">
+            <div class="segment-color {{bar.className}}" data-width={{segmentWidth}}></div>
+          </div>
+        {{/each}}
+      </div>
+      <div class="flex-10 score">{{bar.score}}</div>
+    </div>
+  {{/each}}
+</div>
