@@ -1,10 +1,18 @@
 #feedback {
-  margin: 16px 64px;
+  margin: 16px;
+
+  @media (min-width: 960px) {
+    margin: 16px 64px;
+  }
 
   h2 {
-    font-size: 42px;
+    font-size: 36px;
     margin: 16px 0;
     text-align: center;
+
+    @media (min-width: 720px) {
+      font-size: 42px;
+    }
   }
 
   .subtitle {

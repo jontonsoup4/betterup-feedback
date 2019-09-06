@@ -56,8 +56,12 @@
       &-container {
         align-items: center;
         display: flex;
-        flex: 0 1 110px;;
+        flex: 0 1 26%;
         justify-content: center;
+
+        @media (min-width: 960px) {
+          flex: 0 1 110px;
+        }
       }
     }
   }
